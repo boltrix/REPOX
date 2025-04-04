@@ -187,7 +187,7 @@ public class RecordsResource {
     })
     public Response removeRecord(
             @ApiParam(value = "Id of record", required = true) @QueryParam("recordId") String recordId,
-            @ApiParam(value = "Delete(mark) or erase(permanent)", defaultValue = RecordOptionListContainer.DELETE, allowableValues = RecordOptionListContainer.DELETE + " , " + RecordOptionListContainer.ERASE) @DefaultValue(RecordOptionListContainer.DELETE) @QueryParam("type") String type)
+            @ApiParam(value = "Delete(mark) or erase(permanent)", defaultValue = RecordOptionListContainer.DELETE, allowableValues = RecordOptionListContainer.DELETE + "," + RecordOptionListContainer.ERASE) @DefaultValue(RecordOptionListContainer.DELETE) @QueryParam("type") String type)
             throws DoesNotExistException,
             MissingArgumentsException, InvalidArgumentsException {
 
